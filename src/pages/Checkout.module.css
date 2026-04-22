@@ -1,0 +1,375 @@
+/* Checkout page styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.container h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.emptyMessage {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.emptyMessage h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.emptyMessage p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.backBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.successMessage {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+.successIcon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: scaleUp 0.6s ease;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.successMessage h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.successMessage p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.redirectMessage {
+  font-style: italic;
+  opacity: 0.9;
+  margin-top: 20px;
+}
+
+.homeBtn {
+  background-color: white;
+  color: #28a745;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.homeBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.checkoutLayout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.checkoutForm {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.formSection {
+  margin-bottom: 30px;
+}
+
+.formSection:last-of-type {
+  margin-bottom: 0;
+}
+
+.formSection h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.formGroup small {
+  display: block;
+  margin-top: 5px;
+  color: #666;
+  font-size: 12px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formRow.threeCol {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.placeOrderBtn {
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.placeOrderBtn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.placeOrderBtn:active {
+  transform: scale(0.98);
+}
+
+.orderSummary {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+.orderSummary h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.summaryItems h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemName {
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 5px 0;
+  font-weight: 500;
+}
+
+.itemQty {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.itemPrice {
+  font-size: 14px;
+  color: #007bff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.summaryTotal {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.divider {
+  border-top: 1px solid #e0e0e0;
+  margin: 12px 0;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .checkoutLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .orderSummary {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 15px;
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .checkoutForm,
+  .orderSummary {
+    padding: 20px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow.threeCol {
+    grid-template-columns: 1fr;
+  }
+
+  .placeOrderBtn {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .successMessage {
+    padding: 60px 15px;
+  }
+
+  .successIcon {
+    font-size: 60px;
+  }
+
+  .successMessage h2 {
+    font-size: 26px;
+  }
+
+  .emptyMessage {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .checkoutForm,
+  .orderSummary {
+    padding: 15px;
+  }
+
+  .formSection h2,
+  .orderSummary h2 {
+    font-size: 18px;
+  }
+
+  .placeOrderBtn {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .successMessage {
+    padding: 40px 15px;
+  }
+
+  .successIcon {
+    font-size: 50px;
+  }
+
+  .successMessage h2 {
+    font-size: 20px;
+  }
+
+  .successMessage p {
+    font-size: 14px;
+  }
+}
