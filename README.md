@@ -293,8 +293,7 @@ Created as a comprehensive e-commerce project demonstrating:
 - Responsive web design
 
 ## 🔗 GitHub Repository
-
-**[Insert your GitHub repository link here after creating the repo]**
+https://github.com/nissysalmon03/React-Project1
 
 ---
 
